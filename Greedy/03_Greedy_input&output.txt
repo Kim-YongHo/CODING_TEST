@@ -1,0 +1,26 @@
+03_Greedy_01
+[Input]
+존재 X
+[output]
+
+
+03_Greedy_02
+[Input]
+5 8 3
+2 4 5 4 6
+[output]
+46
+
+[Input]
+5 7 2
+3 4 3 4 3
+[output]
+28
+
+
+
+03_Greedy_03
+[Input]
+
+
+[output]
