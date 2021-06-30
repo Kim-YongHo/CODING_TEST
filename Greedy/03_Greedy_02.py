@@ -1,30 +1,28 @@
-if __name__ == '__main__':
+##M번 더하고  K번 연속
 
+if __name__ == '__main__':
     n, m, k = map(int, input().split())
+    data = []
+
     data = list(map(int, input().split()))
 
-    total = 0
-
-    data.sort()
-    data.reverse()
+    data.sort(reverse=True)
 
     print(data)
 
     first = data[0]
     second = data[1]
 
-    while True:
-        for i in range(k):
-            total += first
-            m -= 1
-            if m == 0:
-                break
-        total += second
-        m -= 1
-        if m == 0:
-            break
+    temp_first = (m // (k + 1) * k + m % (k + 1)) * first
 
-    print(total)
+    temp_second = m // (k + 1) * second
+
+    print(temp_first + temp_second)
+
+
+
+
+
 
 
 
