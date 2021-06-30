@@ -1,28 +1,16 @@
-##M번 더하고  K번 연속
 
 if __name__ == '__main__':
-    n, m, k = map(int, input().split())
-    data = []
 
-    data = list(map(int, input().split()))
+  n, m, k = map(int, input().split())
+  data = list(map(int, input().split()))
 
-    data.sort(reverse=True)
+  data.sort(reverse = True)
+  first = data[0]
+  second = data[1]
 
-    print(data)
+  s_count = m//(k+1) ##최대값 횟수 일부, 2번째 값 횟수
+  f_count = (s_count)*k + m%(k+1)
 
-    first = data[0]
-    second = data[1]
+  total = (s_count*second) + (f_count*first)
 
-    temp_first = (m // (k + 1) * k + m % (k + 1)) * first
-
-    temp_second = m // (k + 1) * second
-
-    print(temp_first + temp_second)
-
-
-
-
-
-
-
-
+  print(total)
