@@ -13,5 +13,5 @@ if __name__ == '__main__':
 
         data = []
 
-
+    temp.sort(reverse=True)
     print(temp[0])
