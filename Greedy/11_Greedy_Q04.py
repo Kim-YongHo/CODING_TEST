@@ -13,6 +13,6 @@ if __name__ == '__main__':
 
         data = []
 
-    temp.sort(reverse=True)
+    temp.sort()
 
     print(temp[0])
