@@ -1,19 +1,15 @@
 if __name__ == '__main__':
 
     s = input()
-    temp = []
-    tot = 0
 
-    for i in range(len(s)):
-        data = int(s[i])
-        temp.append(data)
+    result = int(s[0])
 
-    result = temp[0]
+    for i in range(1, len(s)):
 
-    for i in range(1, len(temp)):
-        if (result <= 1 or temp[i] <= 1):
-            result += temp[i]
+        temp = int(s[i])
+        if (temp <= 1) or (result <= 1):
+            result += temp
         else:
-            result *= temp[i]
+            result *= temp
 
     print(result)
