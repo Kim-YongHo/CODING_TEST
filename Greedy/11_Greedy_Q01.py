@@ -1,20 +1,20 @@
 
 if __name__ == '__main__':
 
-    n, k = map(int, input().split())
-    count = 0
+  n = int(input())
+  data = list(map(int, input().split()))
 
-    while True:
+  data.sort(reverse=True)
+  temp = data[0]
+  check = len(data)
+  count = 0
 
-        if n%k != 0:
-            n -= 1
-            count += 1
-        else:
-            n //= k
-            count += 1
 
-        if n == 1:
-            break
+  while True:
+    if check < 0:
+      break
+    check -= temp
+    temp = data[temp]
+    count += 1
 
-    print(count)
-
+  print(count-1)
