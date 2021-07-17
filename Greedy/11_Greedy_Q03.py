@@ -1,20 +1,20 @@
-
 if __name__ == '__main__':
 
-    n, k = map(int, input().split())
-    count = 0
+    data = input()
 
-    while True:
+    count0 = 0
+    count1 = 0
 
-        if n%k != 0:
-            n -= 1
-            count += 1
-        else:
-            n //= k
-            count += 1
+    if data[0] == '0':
+        count0 += 1
+    else:
+        count1 += 1
 
-        if n == 1:
-            break
+    for i in range(1, len(data)):
+        if data[i - 1] != data[i]:
+            if data[i] == '0':
+                count0 += 1
+            else:
+                count1 += 1
 
-    print(count)
-
+    print(min(count0, count1))

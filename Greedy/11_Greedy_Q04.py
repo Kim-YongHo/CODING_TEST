@@ -1,18 +1,16 @@
-
 if __name__ == '__main__':
 
-    n, m = map(int, input().split())
-    temp = []
+    n = int(input())
+    data = list(map(int, input().split()))
 
-    for i in range(n):
+    data.sort()
 
-        data = list(map(int, input().split()))
+    goal = 1
 
-        data.sort()
-        temp.append(data[0])
+    for check in data:
+        if goal < check:
+            break
 
-        data = []
+        goal += check
 
-    temp.sort()
-
-    print(temp[0])
+    print(goal)
