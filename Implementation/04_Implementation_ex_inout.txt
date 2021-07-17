@@ -1,0 +1,9 @@
+04_Implementation_01
+[Input]
+5
+R R R U D D
+
+[output]
+3 4
+#################
+#################
