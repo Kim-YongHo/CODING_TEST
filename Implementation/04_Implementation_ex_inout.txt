@@ -5,5 +5,30 @@ R R R U D D
 
 [output]
 3 4
+
 #################
 #################
+
+04_Implementation_02
+[Input]
+5
+
+[output]
+11475
+
+#################
+#################
+
+04_Implementation_02
+[Input]
+a1
+
+[output]
+2
+
+
+[Input]
+e5
+
+[output]
+8
