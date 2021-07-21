@@ -7,10 +7,12 @@ if __name__ == '__main__':
 
     for i in range(l // 2):
         left += int(n[i])
-    for i in range((l // 2), l):
+
+    for i in range(l // 2, l):
         right += int(n[i])
 
     if left == right:
         print('LUCKY')
     else:
         print('READY')
+
