@@ -86,23 +86,3 @@ LIMIT 1 #1개만 출력해주는 기능 LIMIT
 
 ---
 
-## 모든 레코드 조회하기
-
-- https://programmers.co.kr/learn/courses/30/lessons/59034
-
-~~~sql
-
-~~~
-
----
-
-## 모든 레코드 조회하기
-
-- https://programmers.co.kr/learn/courses/30/lessons/59034
-
-~~~sql
-
-~~~
-
----
-
