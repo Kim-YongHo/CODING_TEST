@@ -36,7 +36,7 @@ FROM ANIMAL_INS
 - https://programmers.co.kr/learn/courses/30/lessons/59408
 
 ~~~sql
-SELECT COUNT(DISTINCT NAME) as count # DISTINCT : 중복 제거, 명칭을 count로 변경
+SELECT COUNT(DISTINCT NAME) # DISTINCT : 중복 제거
 FROM ANIMAL_INS
 WHERE NAME IS NOT NULL
 ~~~
